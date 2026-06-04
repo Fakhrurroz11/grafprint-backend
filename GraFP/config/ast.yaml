@@ -1,0 +1,44 @@
+T_max: 800
+arch: ast
+bsz_train: 512
+d: 128
+data_dir: data
+dur: 1.0
+error_threshold: 5
+freq_mask: 32
+fs: 16000
+h: 1024
+hop_len: 161
+ir_dir: /content/drive/MyDrive/GraFP/data/aug/ir
+ir_prob: 1.0
+lr: 0.0001
+min_lr: 1.0e-06
+n_dummy: 100
+n_epochs: 400
+n_fft: 400
+n_frames: 100
+n_mels: 64
+n_query: 20
+noise_dir: /content/drive/MyDrive/GraFP/data/aug/noise
+noise_prob: 1.0
+norm: 0.95
+offset: 0.2
+overlap: 0.5
+silence: 0.0005
+tau: 0.1
+test_snr:
+- 19
+- 21
+time_mask: 50
+tr_snr:
+- 0
+- 20
+train_dir: /content/drive/MyDrive/datasets/fma/fma_small
+train_sz: 8000
+u: 32
+val_dir: /content/drive/MyDrive/datasets/fma/fma_medium
+val_snr:
+- 0
+- 20
+val_sz: 106574
+win_len: 400

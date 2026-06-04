@@ -1,0 +1,51 @@
+T_max: 400
+arch: grafp
+blur_kernel:
+- 7
+- 7
+bsz_train: 256
+d: 128
+data_dir: data
+dur: 1.0
+error_threshold: 5
+freq_mask: 16
+fs: 16000
+h: 1024
+hop_len: 512
+ir_dir: /content/drive/MyDrive/GraFP/data/aug/ir
+ir_prob: 1.0
+lambda: 0.0
+lr: 8.0e-05
+min_lr: 7.0e-07
+n_dummy: 100
+n_epochs: 400
+n_fft: 1024
+n_filters: 8
+n_frames: 32
+n_mels: 64
+n_peaks: 512
+n_query: 20
+noise_dir: /content/drive/MyDrive/GraFP/data/aug/noise
+noise_prob: 1.0
+norm: 0.95
+offset: 0.05
+overlap: 0.9
+peak_stride: 2
+silence: 0.0005
+tau: 0.05
+test_snr:
+- 19
+- 21
+time_mask: 8
+tr_snr:
+- 0
+- 20
+train_dir: /content/drive/MyDrive/datasets/fma/fma_small
+train_sz: 8000
+u: 32
+val_dir: /content/drive/MyDrive/datasets/fma/fma_medium
+val_snr:
+- 0
+- 10
+val_sz: 106574
+win_len: 1024
